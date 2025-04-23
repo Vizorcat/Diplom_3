@@ -17,3 +17,10 @@ def create_random_password():
 def create_random_name():
     username = fakeRU.first_name()
     return username
+
+@pytest.fixture
+def generate_user_credentials():
+    email = create_random_email()
+    password = create_random_password()
+    name = create_random_name()
+    return email, password, name

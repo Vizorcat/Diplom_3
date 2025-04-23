@@ -1,6 +1,5 @@
 from page_objects.main_page import MainPage
 from page_objects.feed_page import FeedPage
-from conftest import *
 import allure
 
 
